@@ -176,8 +176,20 @@
                     <view key="view" contentMode="scaleToFill" id="OCd-9v-WtV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-h3-aPx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CpN-ci-cz4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dRS-h3-aPx" firstAttribute="leading" secondItem="CpN-ci-cz4" secondAttribute="leading" id="ZUB-er-SQM"/>
+                            <constraint firstItem="dRS-h3-aPx" firstAttribute="top" secondItem="CpN-ci-cz4" secondAttribute="top" id="lx2-2y-vI6"/>
+                            <constraint firstItem="CpN-ci-cz4" firstAttribute="trailing" secondItem="dRS-h3-aPx" secondAttribute="trailing" id="p3H-Po-H6x"/>
+                            <constraint firstItem="CpN-ci-cz4" firstAttribute="bottom" secondItem="dRS-h3-aPx" secondAttribute="bottom" id="yNO-Cf-W2u"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Picker" image="picker_ico" selectedImage="picker_ico" id="ISD-E8-itX"/>
                     <navigationItem key="navigationItem" id="Tc8-SP-OkF"/>
@@ -210,11 +222,26 @@
                     <view key="view" contentMode="scaleToFill" id="RDg-pN-A9q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bis-bS-zgv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aJA-As-s9Z"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aJA-As-s9Z" firstAttribute="trailing" secondItem="Bis-bS-zgv" secondAttribute="trailing" id="3Oe-SE-9hx"/>
+                            <constraint firstItem="Bis-bS-zgv" firstAttribute="leading" secondItem="aJA-As-s9Z" secondAttribute="leading" id="7EJ-yS-umi"/>
+                            <constraint firstItem="Bis-bS-zgv" firstAttribute="top" secondItem="aJA-As-s9Z" secondAttribute="top" id="oRT-v0-Xvj"/>
+                            <constraint firstItem="aJA-As-s9Z" firstAttribute="bottom" secondItem="Bis-bS-zgv" secondAttribute="bottom" id="sAG-1Q-Gtr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pokemon" image="pokemon_ico" selectedImage="pokemon_ico" id="Va3-oQ-Uha"/>
-                    <navigationItem key="navigationItem" id="mm0-Ah-Ymb"/>
+                    <navigationItem key="navigationItem" title="Pokemon" id="mm0-Ah-Ymb"/>
+                    <connections>
+                        <outlet property="pokemonTableView" destination="Bis-bS-zgv" id="9gu-25-XvX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAj-Hf-dMo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
