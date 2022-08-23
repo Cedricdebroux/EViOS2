@@ -14,6 +14,11 @@
 		02A8BA7B28B4E6E600CAAD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A8BA7A28B4E6E600CAAD65 /* Assets.xcassets */; };
 		02A8BA7E28B4E6E600CAAD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A8BA7C28B4E6E600CAAD65 /* LaunchScreen.storyboard */; };
 		02A8BA8628B502E600CAAD65 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8BA8528B502E600CAAD65 /* ConnectViewController.swift */; };
+		02A8BA8A28B5122A00CAAD65 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8BA8928B5122A00CAAD65 /* TabBarViewController.swift */; };
+		02A8BA8C28B512FF00CAAD65 /* PokemonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8BA8B28B512FF00CAAD65 /* PokemonNavigationController.swift */; };
+		02A8BA8E28B513B900CAAD65 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8BA8D28B513B900CAAD65 /* PokemonViewController.swift */; };
+		02A8BA9028B5181A00CAAD65 /* PickerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8BA8F28B5181A00CAAD65 /* PickerNavigationController.swift */; };
+		02A8BA9228B5183800CAAD65 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8BA9128B5183800CAAD65 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		02A8BA7D28B4E6E600CAAD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02A8BA7F28B4E6E600CAAD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02A8BA8528B502E600CAAD65 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		02A8BA8928B5122A00CAAD65 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		02A8BA8B28B512FF00CAAD65 /* PokemonNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonNavigationController.swift; sourceTree = "<group>"; };
+		02A8BA8D28B513B900CAAD65 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		02A8BA8F28B5181A00CAAD65 /* PickerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerNavigationController.swift; sourceTree = "<group>"; };
+		02A8BA9128B5183800CAAD65 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,11 @@
 				02A8BA7328B4E6E500CAAD65 /* SceneDelegate.swift */,
 				02A8BA7528B4E6E500CAAD65 /* Login.swift */,
 				02A8BA7728B4E6E500CAAD65 /* Main.storyboard */,
+				02A8BA8F28B5181A00CAAD65 /* PickerNavigationController.swift */,
+				02A8BA9128B5183800CAAD65 /* PickerViewController.swift */,
+				02A8BA8D28B513B900CAAD65 /* PokemonViewController.swift */,
+				02A8BA8B28B512FF00CAAD65 /* PokemonNavigationController.swift */,
+				02A8BA8928B5122A00CAAD65 /* TabBarViewController.swift */,
 				02A8BA8528B502E600CAAD65 /* ConnectViewController.swift */,
 				02A8BA7A28B4E6E600CAAD65 /* Assets.xcassets */,
 				02A8BA7C28B4E6E600CAAD65 /* LaunchScreen.storyboard */,
@@ -143,8 +158,13 @@
 			files = (
 				02A8BA7628B4E6E500CAAD65 /* Login.swift in Sources */,
 				02A8BA7228B4E6E500CAAD65 /* AppDelegate.swift in Sources */,
+				02A8BA9028B5181A00CAAD65 /* PickerNavigationController.swift in Sources */,
+				02A8BA9228B5183800CAAD65 /* PickerViewController.swift in Sources */,
 				02A8BA7428B4E6E500CAAD65 /* SceneDelegate.swift in Sources */,
+				02A8BA8E28B513B900CAAD65 /* PokemonViewController.swift in Sources */,
+				02A8BA8A28B5122A00CAAD65 /* TabBarViewController.swift in Sources */,
 				02A8BA8628B502E600CAAD65 /* ConnectViewController.swift in Sources */,
+				02A8BA8C28B512FF00CAAD65 /* PokemonNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

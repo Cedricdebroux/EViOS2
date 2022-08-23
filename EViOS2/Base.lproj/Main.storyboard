@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="-1072" y="-93"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="hb3-fT-rWi">
@@ -87,7 +87,7 @@
                                     <constraint firstAttribute="height" constant="60" id="Wos-6S-4tG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TeO-V5-InU">
                                 <rect key="frame" x="25" y="280" width="364" height="60"/>
@@ -95,7 +95,7 @@
                                     <constraint firstAttribute="height" constant="60" id="sdD-op-juY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SW-uV-ZFT">
                                 <rect key="frame" x="25" y="752" width="364" height="60"/>
@@ -108,6 +108,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="show" destination="ZTM-A1-MjA" eventType="touchUpInside" id="v6E-0M-Qtw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEU-RB-sO8">
                                 <rect key="frame" x="343" y="70" width="61" height="31"/>
@@ -139,18 +142,112 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="connectButton" destination="3SW-uV-ZFT" id="qoc-EH-oDg"/>
                         <outlet property="headerImage" destination="chp-pb-R6E" id="amv-T9-gDI"/>
+                        <outlet property="loginTextFiled" destination="eJg-rB-bgK" id="WH6-RO-pAE"/>
+                        <outlet property="passworTextField" destination="TeO-V5-InU" id="kWA-jg-1cu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggV-05-GXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="84"/>
+            <point key="canvasLocation" x="-241" y="-93"/>
+        </scene>
+        <!--Picker-->
+        <scene sceneID="vfa-B5-uTl">
+            <objects>
+                <navigationController id="zVN-uI-INS" customClass="PickerNavigationController" customModule="EViOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Picker" image="picker_ico" selectedImage="picker_ico" id="U6k-am-vr8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="arg-xm-ULJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SNd-aC-V4t" kind="relationship" relationship="rootViewController" id="5gi-5K-cWj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHx-tL-iZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="412"/>
+        </scene>
+        <!--Picker-->
+        <scene sceneID="Iae-wM-ayT">
+            <objects>
+                <viewController id="SNd-aC-V4t" customClass="PickerViewController" customModule="EViOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCd-9v-WtV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CpN-ci-cz4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Picker" image="picker_ico" selectedImage="picker_ico" id="ISD-E8-itX"/>
+                    <navigationItem key="navigationItem" id="Tc8-SP-OkF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jec-jS-yNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="412"/>
+        </scene>
+        <!--Pokemon-->
+        <scene sceneID="G7U-fC-GXa">
+            <objects>
+                <navigationController storyboardIdentifier="PokemonNavigationController" id="x5L-GD-dWx" customClass="PokemonNavigationController" customModule="EViOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pokemon" image="pokemon_ico" selectedImage="pokemon_ico" id="zIz-Wx-CH9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uf7-DR-meg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kDi-gS-2fO" kind="relationship" relationship="rootViewController" id="Ttd-Qz-se7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCs-8F-nH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="-317"/>
+        </scene>
+        <!--Pokemon-->
+        <scene sceneID="Vh5-la-8vN">
+            <objects>
+                <viewController storyboardIdentifier="PokemonViewController" id="kDi-gS-2fO" customClass="PokemonViewController" customModule="EViOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RDg-pN-A9q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aJA-As-s9Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pokemon" image="pokemon_ico" selectedImage="pokemon_ico" id="Va3-oQ-Uha"/>
+                    <navigationItem key="navigationItem" id="mm0-Ah-Ymb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAj-Hf-dMo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="-317"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="rUU-Bo-N32">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" id="m5i-qu-did" customClass="TabBarViewController" customModule="EViOS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d9Q-0q-M84" customClass="Ta">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x5L-GD-dWx" kind="relationship" relationship="viewControllers" id="Xkt-SL-G3U"/>
+                        <segue destination="zVN-uI-INS" kind="relationship" relationship="viewControllers" id="UuD-8R-yDZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPH-gH-37A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="-93"/>
         </scene>
     </scenes>
     <resources>
         <image name="facebook_ico" width="55" height="55"/>
         <image name="google_ico" width="55" height="55"/>
         <image name="header_pokemon" width="711" height="256"/>
+        <image name="picker_ico" width="25" height="25"/>
+        <image name="pokemon_ico" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
