@@ -20,10 +20,10 @@ class DetailPokemonViewController: UIViewController {
     
     func setup(){
         namePokemon.text = pokemon.name
-        typePokemon.text = pokemon.type
-        pokedex.text = pokemon.pokedexNumber.description
-        heightPokemon.text = pokemon.height.description
-        generationPokemon.text = pokemon.generation.description
+        typePokemon.text = "Types : \(pokemon.type)"
+        pokedex.text = "#\(pokemon.pokedexNumber.description)"
+        heightPokemon.text = "Height : \(pokemon.height.description)"
+        generationPokemon.text = "Gen : \(pokemon.generation.description)"
         pokemonImage.image = pokemon.image
         
     }
