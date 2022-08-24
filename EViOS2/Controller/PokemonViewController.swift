@@ -29,6 +29,8 @@ class PokemonViewController: UIViewController {
         pokemonTableView.delegate = self
         pokemonTableView.register(UINib(nibName: PokemonTableViewCell.identifier, bundle: .main), forCellReuseIdentifier: PokemonTableViewCell.identifier)
        
+        
+        
     }
     
     
@@ -57,4 +59,11 @@ extension PokemonViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
                 return 170
             }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailPokemonViewController = storyboard?.instantiateViewController(identifier: "DetailPokemonViewController") as? DetailPokemonViewController{
+            detailPokemonViewController.pokemon = pokemons[indexPath.row]
+            navigationController?.pushViewController(detailPokemonViewController, animated: true)
+        }
+    }
 }

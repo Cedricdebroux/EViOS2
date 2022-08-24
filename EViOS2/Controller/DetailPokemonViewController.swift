@@ -9,10 +9,28 @@ import UIKit
 
 class DetailPokemonViewController: UIViewController {
 
+    @IBOutlet var pokemonImage: UIImageView!
+    @IBOutlet var pokedex: UILabel!
+    @IBOutlet var namePokemon: UILabel!
+    @IBOutlet var typePokemon: UILabel!
+    @IBOutlet var heightPokemon: UILabel!
+    @IBOutlet var generationPokemon: UILabel!
+    
+    var pokemon: Pokemon!
+    
+    func setup(){
+        namePokemon.text = pokemon.name
+        typePokemon.text = pokemon.type
+        pokedex.text = pokemon.pokedexNumber.description
+        heightPokemon.text = pokemon.height.description
+        generationPokemon.text = pokemon.generation.description
+        pokemonImage.image = pokemon.image
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup()
     }
     
 
