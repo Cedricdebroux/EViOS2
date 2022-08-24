@@ -55,6 +55,7 @@ class ConnectViewController: UIViewController {
         
         #if DEBUG
         loginTextFiled.text = "cedric@debroux.be"
+        passworTextField.text = "hsgqdjedgzieo"
         #endif
     }
     

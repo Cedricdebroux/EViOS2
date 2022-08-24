@@ -24,11 +24,11 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCj-Fc-SXF">
-                        <rect key="frame" x="205" y="69" width="140" height="21"/>
+                        <rect key="frame" x="155" y="58.5" width="200" height="42"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="140" id="oyE-OF-McO"/>
+                            <constraint firstAttribute="width" constant="200" id="oyE-OF-McO"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -36,7 +36,7 @@
                 <constraints>
                     <constraint firstItem="rCj-Fc-SXF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2kA-ZX-yhE"/>
                     <constraint firstItem="RXf-le-GWR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="49Q-to-Z8W"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="rCj-Fc-SXF" secondAttribute="trailing" constant="10" id="68P-dN-gRj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rCj-Fc-SXF" secondAttribute="trailing" id="M5h-az-j8e"/>
                     <constraint firstItem="RXf-le-GWR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vjH-Nd-1id"/>
                 </constraints>
             </tableViewCellContentView>

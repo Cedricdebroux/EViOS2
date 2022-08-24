@@ -12,4 +12,13 @@ import UIKit
 struct Pokemon{
     var name: String
     var image: UIImage!
+    var generation: Int
+    var pokedexNumber: Int
+    var height: Decimal
+    var type: String
+}
+
+struct Color {
+    var colorName: String
+    var backGroundColor: UIColor
 }
